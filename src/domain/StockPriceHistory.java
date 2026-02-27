@@ -4,8 +4,8 @@ import java.time.LocalDateTime;
 
 public class StockPriceHistory {
   private final int id;
-  private String stockSymbol;
-  private double price;
+  private final String stockSymbol;
+  private final double price;
   private final LocalDateTime timestamp;
 
   public StockPriceHistory(int id, String stockSymbol, double price, LocalDateTime timestamp) {
@@ -23,16 +23,9 @@ public class StockPriceHistory {
     return stockSymbol;
   }
 
-  public void setStockSymbol(String stockSymbol) {
-    this.stockSymbol = stockSymbol;
-  }
 
   public double getPrice() {
     return price;
-  }
-
-  public void setPrice(double price) {
-    this.price = price;
   }
 
   public LocalDateTime getTimestamp() {

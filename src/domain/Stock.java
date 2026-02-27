@@ -2,7 +2,7 @@ package domain;
 
 public class Stock {
   private final String symbol;
-  private String name;
+  private final String name;
   private double currentPrice;
   private String currentState;
 
@@ -19,10 +19,6 @@ public class Stock {
 
   public String getName() {
     return name;
-  }
-
-  public void setName(String name) {
-    this.name = name;
   }
 
   public double getCurrentPrice() {

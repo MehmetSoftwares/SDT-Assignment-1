@@ -1,43 +1,54 @@
 package domain;
 
-public class OwnedStock {
-  private final int id;
-  private int portfolioId;
+public class OwnedStock
+{
+
+  private int id;
+  private final int portfolioId;
   private String stockSymbol;
   private int numberOfShares;
 
-  public OwnedStock(int id, int portfolioId, String stockSymbol, int numberOfShares) {
+  public OwnedStock(int id, int portfolioId, String stockSymbol,
+      int numberOfShares)
+  {
     this.id = id;
     this.portfolioId = portfolioId;
     this.stockSymbol = stockSymbol;
     this.numberOfShares = numberOfShares;
   }
 
-  public int getId() {
+  public int getId()
+  {
     return id;
   }
 
-  public int getPortfolioId() {
+  public void setId(int id)
+  {
+    this.id = id;
+  }
+
+  public int getPortfolioId()
+  {
     return portfolioId;
   }
 
-  public void setPortfolioId(int portfolioId) {
-    this.portfolioId = portfolioId;
-  }
-
-  public String getStockSymbol() {
+  public String getStockSymbol()
+  {
     return stockSymbol;
   }
 
-  public void setStockSymbol(String stockSymbol) {
+  public void setStockSymbol(String stockSymbol)
+  {
     this.stockSymbol = stockSymbol;
   }
 
-  public int getNumberOfShares() {
+  public int getNumberOfShares()
+  {
     return numberOfShares;
   }
 
-  public void setNumberOfShares(int numberOfShares) {
+  public void setNumberOfShares(int numberOfShares)
+  {
     this.numberOfShares = numberOfShares;
   }
 }

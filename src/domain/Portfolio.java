@@ -1,7 +1,7 @@
 package domain;
 
 public class Portfolio {
-  private final int id;
+  private int id;
   private double currentBalance;
 
   public Portfolio(int id, double currentBalance) {
@@ -15,6 +15,10 @@ public class Portfolio {
 
   public double getCurrentBalance() {
     return currentBalance;
+  }
+
+  public void setId(int id) {
+    this.id = id;
   }
 
   public void setCurrentBalance(double currentBalance) {

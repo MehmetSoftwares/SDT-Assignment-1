@@ -2,18 +2,22 @@ package domain;
 
 import java.time.LocalDateTime;
 
-public class Transaction {
+public class Transaction
+{
   private final int id;
-  private int portfolioId;
-  private String stockSymbol;
-  private String type;
-  private int quantity;
-  private double pricePerShare;
-  private double totalAmount;
-  private double fee;
+  private final int portfolioId;
+  private final String stockSymbol;
+  private final String type;
+  private final int quantity;
+  private final double pricePerShare;
+  private final double totalAmount;
+  private final double fee;
   private final LocalDateTime timestamp;
 
-  public Transaction(int id, int portfolioId, String stockSymbol, String type, int quantity, double pricePerShare, double totalAmount, double fee, LocalDateTime timestamp) {
+  public Transaction(int id, int portfolioId, String stockSymbol, String type,
+      int quantity, double pricePerShare, double totalAmount, double fee,
+      LocalDateTime timestamp)
+  {
     this.id = id;
     this.portfolioId = portfolioId;
     this.stockSymbol = stockSymbol;
@@ -25,67 +29,48 @@ public class Transaction {
     this.timestamp = timestamp;
   }
 
-  public int getId() {
+  public int getId()
+  {
     return id;
   }
 
-  public int getPortfolioId() {
+  public int getPortfolioId()
+  {
     return portfolioId;
   }
 
-  public void setPortfolioId(int portfolioId) {
-    this.portfolioId = portfolioId;
-  }
-
-  public String getStockSymbol() {
+  public String getStockSymbol()
+  {
     return stockSymbol;
   }
 
-  public void setStockSymbol(String stockSymbol) {
-    this.stockSymbol = stockSymbol;
-  }
-
-  public String getType() {
+  public String getType()
+  {
     return type;
   }
 
-  public void setType(String type) {
-    this.type = type;
-  }
-
-  public int getQuantity() {
+  public int getQuantity()
+  {
     return quantity;
   }
 
-  public void setQuantity(int quantity) {
-    this.quantity = quantity;
-  }
-
-  public double getPricePerShare() {
+  public double getPricePerShare()
+  {
     return pricePerShare;
   }
 
-  public void setPricePerShare(double pricePerShare) {
-    this.pricePerShare = pricePerShare;
-  }
-
-  public double getTotalAmount() {
+  public double getTotalAmount()
+  {
     return totalAmount;
   }
 
-  public void setTotalAmount(double totalAmount) {
-    this.totalAmount = totalAmount;
-  }
-
-  public double getFee() {
+  public double getFee()
+  {
     return fee;
   }
 
-  public void setFee(double fee) {
-    this.fee = fee;
-  }
-
-  public LocalDateTime getTimestamp() {
+  public LocalDateTime getTimestamp()
+  {
     return timestamp;
   }
 }
